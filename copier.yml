@@ -44,3 +44,8 @@ features:
 # orcid:
 #   type: boolean
 #   help: Would you like to link this workflow to an ORCID ID?
+
+_exclude:
+  - .github/
+  - .test/
+  - CHANGELOG.yml
