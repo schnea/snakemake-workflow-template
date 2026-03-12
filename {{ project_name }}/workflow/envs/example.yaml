@@ -1,4 +1,4 @@
-name: get_genome
+name: copy_file
 channels:
   - conda-forge
   - bioconda

@@ -13,6 +13,14 @@ configfile: "config/config.yaml"
 include: "rules/example.smk"
 
 
+# target rules
+# -----------------------------------------------------
+rule all:
+    input:
+        "results/output.txt"
+    default_target: True
+
+
 # optional messages, log and error handling
 # -----------------------------------------------------
 onstart:
@@ -23,11 +31,3 @@ onsuccess:
 
 onerror:
     print("\n--- An error occurred! ---\n")
-
-
-# target rules
-# -----------------------------------------------------
-rule all:
-    input:
-        "results/output.txt"
-    default_target: True
